@@ -1,0 +1,131 @@
+.Map {  width: 100vw;  height: 100vh; }
+
+.mapboxgl-popup {
+    max-width: 400px;
+}
+
+.mapboxgl-popup-content {
+    border-radius: 10px 10px 10px 10px;
+}
+
+.mapboxgl-ctrl-group button {
+    width: 30px;
+    height: 30px;
+}
+
+  /* Location Search */
+.mapboxgl-ctrl-geocoder {
+    width: 480px;
+}
+
+.mapboxgl-ctrl-geocoder .mapboxgl-ctrl-geocoder--input {
+    width: 400px;
+    height: 40px;  
+    position: absolute;
+    left: 40px; 
+    top: 5px;
+}
+
+.mapboxgl-ctrl-geocoder--icon-search {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+}
+
+.suggestions-wrapper {
+    background: white;
+    width: 400px;
+    margin-left: 40px;
+    cursor: pointer;
+    border-radius: 0px 0px 15px 15px;
+    margin-top: 40px;
+    position: absolute;
+    top: 5px;
+}
+
+.suggestions li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.mapboxgl-ctrl-geocoder--pin-right {
+    position: absolute;
+    left: 400px;
+    top: 13px;
+    display: none;
+}
+
+  /* loader */
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #004953;
+    animation: loader 2s infinite ease;
+    z-index: 9999;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #004953;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% {
+    transform: rotate(0deg);
+    }
+
+    25% {
+    transform: rotate(180deg);
+    }
+
+    50% {
+    transform: rotate(180deg);
+    }
+
+    75% {
+    transform: rotate(360deg);
+    }
+
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-inner {
+    0% {
+    height: 0%;
+    }
+
+    25% {
+    height: 0%;
+    }
+
+    50% {
+    height: 100%;
+    }
+
+    75% {
+    height: 100%;
+    }
+
+    100% {
+    height: 0%;
+    }
+}

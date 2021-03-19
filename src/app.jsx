@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Map from './Map.jsx';
 
 ReactDOM.render(
-    <h1>Phase 1</h1>,
+    <Map />,
     document.getElementById('app'),
 );
